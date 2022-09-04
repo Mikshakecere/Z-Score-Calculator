@@ -1,3 +1,7 @@
 maybe to optimize it for one message, you could do placeholder variables to take values, ex. z score 5 3 2
 what you would do from here is see what the first placeholder was, it would be z score in this case
 set the rest of the formula variables to the placeholder values and there you go
+
+pholder1, pholder2, pholder3, pholder4 = input()
+if pholder1 == z score
+  
