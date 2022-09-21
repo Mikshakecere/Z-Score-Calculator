@@ -11,7 +11,7 @@ def main():
     standard_deviation = 0
 
     if variable == "z score":
-        x, mean, standard_deviation = input("input the values of these variables in this order: x, mean, standard_deviation ")
+        x, mean, standard_deviation = input("input the values of these variables in this order: x, mean, standard_deviation ").split()
         x = int(x)
         mean = int(mean)
         standard_deviation = int(standard_deviation)
@@ -23,25 +23,25 @@ def main():
         mean = str(mean)
         standard_deviation = str(standard_deviation)
         print("your z score is " + z_score)
-        print("other values used: " + x + mean + standard_deviation)
+        print("other values used: " + x + " " + mean + " " + standard_deviation)
 
     elif variable == "x":
-        z_score, mean, standard_deviation = input("input the values of these variables in this order: z score, mean, standard_deviation")
+        z_score, mean, standard_deviation = input("input the values of these variables in this order: z score, mean, standard_deviation").split()
         z_score = int(z_score)
         mean = int(mean)
         standard_deviation = int(standard_deviation)
 
-        x = mean - (z_score * standard_deviation)
+        x = mean + (z_score * standard_deviation)
 
         z_score = str(z_score)
         x = str(x)
         mean = str(mean)
         standard_deviation = str(standard_deviation)
         print("your x is " + x)
-        print("other values used: " + z_score + mean + standard_deviation)
+        print("other values used: " + z_score + " " + mean + " " + standard_deviation)
 
     elif variable == "mean":
-        z_score, x, standard_deviation = input("input the values of these variables in this order: z score, x, standard_deviation")
+        z_score, x, standard_deviation = input("input the values of these variables in this order: z score, x, standard_deviation").split()
         z_score = int(z_score)
         x = int(x)
         standard_deviation = int(standard_deviation)
@@ -53,10 +53,10 @@ def main():
         mean = str(mean)
         standard_deviation = str(standard_deviation)
         print("your mean is " + mean)
-        print("other values used: " + z_score + x + standard_deviation)
+        print("other values used: " + z_score + " " + x + " " + standard_deviation)
 
     elif variable == "standard deviation":
-        z_score, x, mean = input("input the values of these variables in this order: z score, x, mean")
+        z_score, x, mean = input("input the values of these variables in this order: z score, x, mean").split()
         z_score = int(z_score)
         x = int(x)
         mean = int(mean)
@@ -68,7 +68,7 @@ def main():
         mean = str(mean)
         standard_deviation = str(standard_deviation)
         print("your standard deviation is " + standard_deviation)
-        print("other values used: " + z_score + x + mean )
+        print("other values used: " + z_score + " " + x + " " + mean )
 
     else:
         print("use correct input ty")
